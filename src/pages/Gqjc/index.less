@@ -1,0 +1,622 @@
+.gqjc{
+    width: 100%;
+    height: 100%;
+    position: relative;;
+    // background-color: white;
+    .showBtn{
+        width: 118px;
+        height: 58px;
+        border: 1px solid;
+        border-bottom: none;
+        border-image: linear-gradient(180deg, rgba(17, 187, 192, 1), rgba(17, 187, 192, 0)) 10 10 0 10;
+        background: linear-gradient(180deg, rgba(9, 34, 57, 1) 0%, rgba(9,34,57,0.2) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: #52F3F6;
+        cursor: pointer;
+        z-index: 2;
+        img{
+            width: 27px;
+            height: 23px;
+            margin-right: 8px;
+        }
+       
+    }
+    .left{
+        position: absolute;
+        left: 13px;
+        top: 89px;
+        z-index: 2;
+    }
+    .right{
+        position: absolute;
+        right: 13px;
+        top: 89px;
+        z-index: 2;
+    }
+    .boxCommon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+    }
+    .gqjc-left{
+        position: absolute;
+        left: 13px;
+        top: 148px;
+        width: 1250px;
+        height: 900px;
+    }
+    .gqjc-right{
+        position: absolute;
+        right: 13px;
+        top: 148px;
+        width: 1250px;
+        height: 900px;
+        z-index: 3;
+    }
+    .gqjc-jbgk{
+        position: absolute;
+        left: 0px;
+        top: 410px;
+    }
+    .gqjc-wyskjbqk{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .gqjc-ssjc{
+        position: absolute;
+        left: 633px;
+        top: 0px;
+    }
+    .toLeft{
+        left: 13px !important; 
+    }
+    .toLeftBox{
+        left: 98px !important; 
+    }
+    .toRight{
+        right: 13px !important; 
+    }
+    .toRightBox{
+        right: 98px !important; 
+    }
+    .ystj{
+        width: 346px;
+        height: 234px;
+        // background-image: url('../../assets/images/fxxs/rain-tj.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 1279px;
+        top: 203px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: rgba(9,34,57,0.67);
+        border: 2px solid rgba(119,162,57,0.3);
+        display: none;
+        z-index: 2;
+        .ystj-bg{
+            position: absolute;
+            width: 326px;
+            height: 214px;
+            top: 10px;
+            left: 10px;
+        }
+        .ystj-item{
+            width: 173px;
+            height: 117px;
+            line-height: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            .ystj-title{
+                font-size: 20px;
+                font-family: Adobe Heiti Std;
+                font-weight: normal;
+                color: #74A7C3;
+            }
+            .ystj-num{
+                font-size: 28px;
+                font-family: Microsoft YaHei;
+                font-weight: bold;
+                color: #F1FAFF;
+            }
+            .ystj-unit{
+                font-size: 20px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                color: #74A7C3;
+            }
+        }
+        .ystj-zs{
+            position: absolute;
+            left: 148px;
+            top: 92px;
+        }
+
+    }
+    .myCheckBox{
+        width: 82px;
+        height: 81px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 1279px;
+        top: 203px;
+        background-image: url('../../assets/images/gqjc/dxk_btnBg.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 2;
+        img{
+            width: 75px;
+            height: 74px;
+        }
+    }
+    .myCheckBoxContent{
+        width: 157px;
+        height: 350px;
+        position: absolute;
+        left: 1364px;
+        top: 203px;
+        background-image: url('../../assets/images/gqjc/checkbox_bg.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        .el-checkbox-group{
+            width: 146px;
+            height: 100%;
+            margin-top: 14px;
+            overflow: hidden;
+            // overflow-y: scroll;
+        }
+        .el-checkbox{
+            width: 140px;
+            height: 30px;
+            line-height: 30px;
+            margin-top: 7px;
+            background: linear-gradient(90deg, rgba(0,255,234,0) 0%, rgba(0,255,234,0.1) 70%, rgba(0,255,234,0) 100%);
+            .el-checkbox__label{
+                font-size: 16px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                color: #73A7C3;
+            }
+            
+        }
+        .el-checkbox__inner{
+            width: 12px;
+            height: 12px;
+            background: rgba(9,34,57,0.2);
+            border: 1px solid #04ADE0;
+            border-radius: 3px;
+        }
+        .el-checkbox__input.is-checked .el-checkbox__inner, 
+        .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+            background-color: #04ADE0;
+            border-color: #04ADE0;
+        }
+        .el-checkbox__input.is-checked+.el-checkbox__label{
+            color:#FFFFFF !important;
+        }
+        .el-checkbox__inner::after{
+            border: 2px solid #FFF;
+            border-left: 0;
+            border-top: 0;
+            height: 7px;
+            left: 3px;
+            position: absolute;
+            top: -1px;
+        }
+        
+    }
+    .ghtBtn{
+        width: 70px;
+        height: 131px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 1282px;
+        top: 195px;
+        background-image: url('../../assets/images/gqjc/ght_Bg.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        line-height: 20px;
+        z-index: 2;
+        img{
+            width: 34px;
+            height: 34px;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+        span{
+            font-size: 18px;
+            font-family: Adobe Heiti Std;
+            font-weight: normal;
+            color: #FFFFFF;
+        }
+    }
+    .ghtContent{
+        width: 1000px;
+        height: 640px;
+        position: absolute;
+        right: 1367px;
+        top: 226px;
+        text-align: center;
+        // line-height: 300px;
+        background: rgba(9,34,57,0.87);
+        // background-image: url('../../assets/images/gqjc/ght.png');
+        // background-size: 100% 100%;
+        z-index: 2;
+        padding: 10px;
+    }
+    .gqjc-ggmjtj{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .gqjc-zyslfx{
+        position: absolute;
+        left: 0px;
+        top: 460px;
+    }
+    .gqjc-jcyxzt{
+        position: absolute;
+        left: 0px;
+        top: 606px;
+    }
+    .gqjc-qxzs{
+        position: absolute;
+        left: 635px;
+        top: 0px;
+    }
+    .gqjc-ssyq{
+        position: absolute;
+        left: 635px;
+        top: 318px;
+    }
+    .gqjc-sqjk{
+        position: absolute;
+        left: 635px;
+        top: 576px;
+    }
+    .gqjcpc-bin-left{
+        position: absolute;
+        top: 203px;
+        left: 8%;
+        z-index: 100;
+        .bimBox{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            padding: 15px;
+            overflow-y: auto;
+            li{
+                color: #fffdef;
+                list-style-type: none;
+                margin-bottom: 8px;
+                .t-title{
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                }
+                .t-content{
+                    span{
+                        display: inline-block;
+                        padding: 5px;
+                        font-size: 14px;
+                        margin-right: 8px;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        background: rgba(9, 34, 57, 0.85);
+                        color: #87D2E4;
+                    }
+                    .active{
+                        background-color: #18C2C7;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+    .gqjcpc-bin-right{
+        position: absolute;
+        top: 203px;
+        right: 8%;
+        z-index: 100;
+        .bimClose{
+            position: absolute;
+            top: 5px;
+            right: 12px;
+            cursor: pointer;
+            background: rgba(0, 0, 0.5);
+            border-radius: 50px;
+            width: 22px;
+            height: 22px;
+            text-align: center;
+        }
+        .bimTable{
+            height: 100%;
+            width: 100%;
+            overflow-y: auto;
+            li{
+                display: flex;
+                font-size: 15px;
+                color: #fff;
+                border: 1px solid #03abb4;
+                border-bottom: 0;
+                list-style-type: none;
+                .c-title{
+                    width: 120px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    border-right:1px solid #03abb4;
+                }
+                .c-content{
+                    height: 30px;
+                    flex: 1;
+                    line-height: 30px;
+                }
+            }
+            li:last-child{
+                border-bottom: 1px solid #03abb4;
+            }
+        }
+    }
+    .gqjc-bottom{
+        width: 1224px;
+        height: 225px;
+        position: absolute;
+        left: 1265px;
+        bottom: 28px;
+        display: flex;
+        // justify-content: space-around;
+        padding-left: 21px;
+        padding-right: 19px;
+        z-index: 2;
+        .bottom-dz{
+            width: 1264px;
+            height: 109px;
+            position: absolute;
+            bottom: 0px;
+        }
+        .gqjc-bottom-item{
+            width: 193px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            .bottom-item-wzbg{
+                width: 193px;
+                height: 170px;
+                margin-bottom: 5px;
+            }
+            .bottom-item-wzdz{
+                width: 117px;
+                height: 27px;
+            }
+            .bottom-item-title{
+                font-size: 20px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                color: #52F3F6;
+                text-shadow: 0px 0px 6px #285547;
+                position: absolute;
+                bottom: 32px;
+            }
+            .bottomCheck{
+                color: #FFFFFF;
+                background-color: rgba(17, 187, 192, 0.1);
+            }
+            .bottom-item-wz{
+                font-size: 20px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                color: #FFFFFF;
+                position: absolute;
+                top: 72px;
+                span:nth-child(1){
+                    font-family: UniDreamLED;
+                    font-size: 60px;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    text-shadow: 0px 0px 25px rgba(40,85,71,0.75);
+                }
+            }
+        }
+    }
+    .el-loading-spinner .path{
+        stroke: #207692;
+      }
+      .el-loading-spinner .el-loading-text{
+        color:#207692 !important;
+    }
+    .siteVideoBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .el-dialog{
+            background: rgba(0, 0, 0, 0.6)
+        }
+        .el-dialog__body {
+          padding: 0;
+          position: relative;
+        }
+        .lpbox{
+          width: 100%;
+          height: 500px;
+        }
+        .video-js{
+            background: none
+        }
+        .video-wrapper .video-js .video-title{
+            display: none;
+        }
+      }
+
+    
+    //飞行漫游
+    .flyBtn{
+        width: 104px;
+        height: 178px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        right: 1292px;
+        top: 330px;
+        line-height: 20px;
+        z-index: 2;
+        .fb-left{
+            width: calc(100% / 2);
+            height: 100%;
+            display: block;
+            padding-left: 10px;
+            .fb-l{
+                width: 40px;
+                height: 40px;
+                background: rgba(9,34,57,0.6);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .fb-l-top{
+                margin-top: -10px;
+                .fb-l-t-n{
+                    width: 28px;
+                    height: 28px;
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+                .fb-l-t-n-img{
+                    background-image: url('../../assets/images/gqjc/fly-zt.png');
+                }
+                .fb-l-t-n-img-active{
+                    background-image: url('../../assets/images/gqjc/fly-zt-nq.png');
+                }
+                
+            }
+            .fb-l-bottom{
+                margin-top: 6px;
+                .fb-l-b-n{
+                    width: 28px;
+                    height: 28px;
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+                .fb-l-b-n-img{
+                    background-image: url('../../assets/images/gqjc/fly-tz.png');
+                }
+                .fb-l-b-n-img-active{
+                    background-image: url('../../assets/images/gqjc/fly-tz-nq.png');
+                }
+            }
+        }
+        .fb-right{
+            width: calc(100% / 2);
+            height: 100%;
+            .fb-r-top{
+                width: 100%;
+                height: 54px;
+                background-image: url('../../assets/images/gqjc/fly-txy-n.png');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .fb-r-t-w{
+                    width: 40px;
+                    height: 40px;
+                    background: rgba(9,34,57,0.6);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .fb-r-t-n{
+                        width: 28px;
+                        height: 28px;
+                        cursor: pointer;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                    }
+                    .fb-r-t-n-img{
+                        background-image: url('../../assets/images/gqjc/fly-txy-nq-n.png');
+                    }
+                    .fb-r-t-n-img-active{
+                        background-image: url('../../assets/images/gqjc/fly-txy-nq.png');
+                    }
+                }
+                
+            }
+            .fb-r-bottom{
+                width: 100%;
+                height: 124px;
+                background-image: url('../../assets/images/gqjc/fly-xzjh-w.png');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -4px;
+                .fb-r-b-n{
+                    width: 40px;
+                    height: 111px;
+                    background-image: url('../../assets/images/gqjc/fly-xzjh-n.png');
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    flex-direction: column;
+                    justify-items: center;
+                    align-items: center;
+                    .fb-r-b-n-txt{
+                        font-size: 14px;
+                        font-family: Adobe Heiti Std;
+                        transform: rotate(-360deg);
+                        transform-origin: center center;
+                        width: 12px;
+                        height: 100%;
+                        line-height: 16px;
+                        margin-top: 10px;
+                    }
+                }
+                .fb-r-b-n-left{
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('../../assets/images/gqjc/caret-left.png');
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 53px;
+                    cursor: pointer;
+                }
+                .fb-r-b-n-right{
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('../../assets/images/gqjc/caret-right.png');
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 83px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>logo.ico">
+    <script src="js/jquery3.4.1.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/liveplayer-lib.min.js"></script>
+    <!-- Cesium 依赖-->
+    <link href="./static/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <script type="text/javascript" src="./static/Cesium/Cesium.js"></script>
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    window.onresize = function() {
+      setScale()
+    }
+    function setScale() {
+      let designWidth = 3840 //设计稿的宽度，根据实际项目调整
+      let designHeight = 1350 //设计稿的高度，根据实际项目调整
+      // 缩放比
+      let scale =
+        document.documentElement.clientWidth / document.documentElement.clientHeight < designWidth / designHeight
+          ? document.documentElement.clientWidth / designWidth
+          : document.documentElement.clientHeight / designHeight
+
+      // 获取所有类名为  trans-common 的元素，设置 transform 属性
+      let selectorAll = document.querySelectorAll('.transCommon')
+      for (let i = 0; i < selectorAll.length; i++) {
+        selectorAll[i].style = 'transform: scale(' + scale + '); '
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,168 @@
+.loginP {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  background-color: black;
+
+
+  .login {
+    background-image: url('../../assets/images/login_bg.png');
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Adobe Heiti Std;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-box {
+      width: 506px;
+      height: 585px;
+      background: rgba(0, 0, 0, 0.24);
+      border-radius: 10px;
+      backdrop-filter: blur(6px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .login-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 506px;
+        height: 157px;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.12) 50%, rgba(255, 255, 255, 0) 100%);
+        border-radius: 0px 0px 10px 10px;
+        img {
+          width: 50px;
+          height: 50px;
+          margin-top: 30px;
+        }
+
+        span {
+          font-size: 26px;
+          font-family: PingFangSC-Semibold;
+          font-weight: 600;
+          color: #FFFFFF;
+          margin-top: 10px;
+        }
+      }
+      .login-form{
+        width: 400px;
+        padding: 50px 53px 0px 53px;
+       .el-input {
+          height: 44px;
+          line-height: 44px;
+          font-size: 16px;
+          border-bottom: 1px solid rgba(241, 241, 241, 0.2);
+          input {
+            height: 44px;
+            border: none !important;
+            font-size: 16px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: #FFFFFF !important;
+            background-color: transparent !important;
+            caret-color:#FFFFFF;
+          }
+         
+        }
+        //自动填充样式 起作用拉~~~~~~
+        input:-internal-autofill-previewed,
+        input:-internal-autofill-selected {
+            -webkit-text-fill-color: #FFFFFF !important;
+            transition: background-color 5000s ease-in-out 0s !important;
+        }
+        //自动填充样式 不起作用
+        input:-webkit-autofill {
+          // box-shadow: 0 0 0 1000px red inset;
+       }
+        .el-input__inner::placeholder {
+          font-size: 16px;
+          font-family: PingFangSC-Regular;
+          font-weight: 400;
+          color:rgba(255, 255, 255, 0.3) !important;
+        }
+        .input-icon {
+          height: 20px;
+          width: 18px;
+          margin-left: 0px;
+          margin-top: 11px;
+        }
+      }
+      .login-code {
+        width: 33%;
+        height: 44px;
+        float: right;
+        img {
+          cursor: pointer;
+          vertical-align: middle;
+        }
+      }
+      // .el-login-footer {
+      //   height: 44px;
+      //   line-height: 44px;
+      //   position: fixed;
+      //   bottom: 0;
+      //   width: 100%;
+      //   text-align: center;
+      //   color: #fff;
+      //   font-family: Arial;
+      //   font-size: 12px;
+      //   letter-spacing: 1px;
+      // }
+      .el-button{
+        width: 400px;
+        height: 40px;
+        line-height: 40px;
+        background: linear-gradient(180deg, #35E3E5 0%, #18C2C7 100%);
+        border-radius: 6px;
+        border: none;
+        font-size: 18px;
+        font-family: PingFangSC-Regular;
+        font-weight: 500;
+        color: #FFFFFF;
+        padding: 0;
+        margin-top: 60px;
+      }
+      .login-code-img {
+        height: 44px;
+        padding-left: 12px;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      /**滚动条整体样式*/
+      width: 5px;
+      /*高宽分别对应横竖滚动条的尺寸*/
+      height: 1px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      /*滚动条里面小方块*/
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 5px rgba(123, 255, 231, 0.2);
+      background: rgba(34, 72, 133, 0.5);
+    }
+
+    ::-webkit-scrollbar-track {
+      /*滚动条里面轨道*/
+      /*-webkit-box-shadow: inset 0 0 5px rgba(123, 255, 231, 0.5);*/
+      border-radius: 10px;
+      background: rgba(34, 72, 133, 0.5);
+    }
+
+  }
+}

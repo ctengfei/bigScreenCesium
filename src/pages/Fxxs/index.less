@@ -1,0 +1,273 @@
+.fxxs {
+    width: 100%;
+    height: 100%;
+    .cesium-viewer {
+        z-index: 0;
+    }
+    .cesium-viewer-navigationContainer{
+        right: 300px;
+        top: 150px;
+        transform:scale(1.5)
+    }
+    .showBtn{
+        width: 118px;
+        height: 58px;
+        border: 1px solid;
+        border-bottom: none;
+        border-image: linear-gradient(180deg, rgba(17, 187, 192, 1), rgba(17, 187, 192, 0)) 10 10 0 10;
+        background: linear-gradient(180deg, rgba(9, 34, 57, 1) 0%, rgba(9,34,57,0.2) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: #52F3F6;
+        cursor: pointer;
+        z-index: 2;
+        img{
+            width: 27px;
+            height: 23px;
+            margin-right: 8px;
+        }
+       
+    }
+    .left{
+        position: absolute;
+        left: 13px;
+        top: 89px;
+    }
+    .right{
+        position: absolute;
+        right: 13px;
+        top: 89px;
+    }
+    .toLeft{
+        left: 13px !important; 
+    }
+    .toRightR{
+        right: 232px !important; 
+    }
+    .toRight{
+        right: 13px !important; 
+    }
+    .boxCommon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+    }
+    .fxxs-left, .fxxs-right{
+        z-index: 2;
+        position: relative;
+    }
+    .fxxs-jbgk {
+        position: absolute;
+        left: 13px;
+        top: 142px;
+        .fxxs-base{
+            margin-top: 19px;
+        }
+    }
+    .fxxs-jyyb{
+        position: absolute;
+        left: 13px;
+        top: 612px;
+    }
+    .fxxs-fhgzzd{
+        position: absolute;
+        left: 648px;
+        top: 142px;
+    }
+    .fxxs-fxddfa{
+        position: absolute;
+        right: 655px;
+        top: 142px;
+    }
+    .fxxs-yafapj{
+        position: absolute;
+        right: 15px;
+        top: 142px;
+    }
+    .fxxs-spjk{
+        position: absolute;
+        right: 15px;
+        top: 674px;
+    }
+    .fxxs-mnyy{
+        position: absolute;
+        left: 1283px;
+        top: 822px;
+    }
+    .fxxs-yyjg{
+        position: absolute;
+        right:1523px;
+        top: 164px;
+        z-index: 2;
+    }
+    .fxxs-yyjgtable{
+        position: absolute;
+        left: 367px;
+        top: 164px;
+        z-index: 2;
+    }
+    .fxxs-yyjgRuler{
+        position: absolute;
+        left: 82px;
+        top: 438px;
+        z-index: 2;
+        .title{
+            min-width: 200px;
+        }
+    }
+    .yltj{
+        width: 346px;
+        height: 234px;
+        z-index: 2;
+        // background-image: url('../../assets/images/fxxs/rain-tj.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 1279px;
+        top: 203px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: rgba(9,34,57,0.67);
+        border: 2px solid rgba(119,162,57,0.3);
+        .yltj-bg{
+            position: absolute;
+            width: 326px;
+            height: 214px;
+            top: 8px;
+            left: 8px;
+        }
+        .yltj-item{
+            width: calc(100% / 2);
+            height: 108px;
+            line-height: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .yltj-title{
+                font-size: 15px;
+                font-family: Adobe Heiti Std;
+                font-weight: normal;
+                color: #74A7C3;
+                .yltj-unit{
+                    font-size: 12px;
+                }
+            }
+            .yltj-content{
+                flex: 1;
+                width: 100%;
+                padding-left: 18px;
+                .yltj-it{
+                    display: flex;
+                    justify-content: flex-start;
+                    line-height: 25px;
+                    .yltj-tit{
+                        font-size: 13px;
+                    }
+                    .yltj-txt{
+                        font-size: 13px;
+                        font-family: Microsoft YaHei;
+                        font-weight: bold;
+                        color: #F1FAFF;
+                    }
+                }
+            }
+        }
+        .yltj-zs{
+            position: absolute;
+            left: 146px;
+            top: 90px;
+        }
+
+    }
+    .current{
+        width: 220px;
+        position: absolute;
+        // left: 2318px;
+        right:1303px;
+        top: 158px;
+        z-index: 2;
+        .current-item{
+            width: 220px;
+            height: 161px;
+            position: relative;
+            margin-bottom: 20px;
+            .current-itemBg{
+                width: 220px;
+                height: 138px;
+                position: absolute;
+                top: 23px;
+                
+            }
+            .current-itemCircl{
+                position: absolute;
+                top: 0px;
+                left: 85px;
+            }
+            .current-icon1{
+                position: absolute;
+                width: 17px;
+                height: 40px;
+                left: 10px;
+                top: 50px;
+
+            }
+            .current-icon2{
+                position: absolute;
+                width: 17px;
+                height: 30px;
+                left: 10px;
+                top: 55px;
+            }
+            .current-content{
+                position: absolute;
+                left: 40px;
+                top: 56px;
+                display: flex;
+                flex-direction: column;
+                .current-content-title{
+                    font-size: 20px;
+                    font-family: Adobe Heiti Std;
+                    font-weight: normal;
+                    color: rgba(228, 242, 254, 0.9);
+                    margin-bottom: 5px;
+                    line-height: 20px;
+                }
+                .current-content-value{
+                    margin-left: 9px;
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #E4F2FE;
+
+                }
+            }
+        }
+    }
+ .mytableBox{
+    width:615px;
+    height: 686px;
+  }
+.dv-scroll-board .header .header-item{
+  font-size: 16px;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #8BC2F2;
+  white-space: normal;
+  line-height: normal !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ .ceil{
+  font-size: 14px;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #E4F2FE;
+ }
+ .index{
+  background-color: transparent !important;
+ }
+}

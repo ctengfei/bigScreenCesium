@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "JLinXin";
+    src: url('./JLinXin.woff');
+}  
+@font-face {
+    font-family: "Adobe Heiti Std";
+    src: url('./AdobeHeitiStd-Regular.woff');
+} 
+@font-face {
+    font-family: "PingFangSC-Regular";
+    src: url('./PingFangSC-Regular.woff');
+} 
+@font-face {
+    font-family: "PingFangSC-Semibold";
+    src: url('./PingFangSC-Semibold.woff');
+}
+@font-face {
+    font-family: "UnidreamLED";
+    src: url('./UnidreamLED.woff');
+}
+@font-face {
+    font-family: "SourceHanSansCN-Heavy";
+    src: url('./SourceHanSansCN-Heavy.woff');
+}
+@font-face {
+    font-family: "hyliliangheij";
+    src: url('./hyliliangheij.ttf');
+}
